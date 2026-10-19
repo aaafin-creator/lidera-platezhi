@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="referrer" content="no-referrer">
+<title>Журнал платежей переехал</title>
+<script>
+// журнал переехал на сервер компании (19.10.2026): ссылка-приглашение (?k=), личная ссылка (?u=) и раздел (#…) переносятся как есть
+location.replace('https://om.opsengeneering.com/' + location.search + location.hash);
+</script>
+<style>
+:root { --bg: #ffffff; --fg: #1f2933; --link: #0b6bcb; color-scheme: light }
+@media (prefers-color-scheme: dark) { :root { --bg: #14181c; --fg: #e4e7eb; --link: #6cb4ff; color-scheme: dark } }
+body { margin: 0; padding: 48px 16px; background: var(--bg); color: var(--fg); font: 16px/1.5 system-ui, -apple-system, sans-serif; text-align: center }
+a { color: var(--link) }
+</style>
+</head>
+<body>
+<p>Журнал платежей переехал на новый адрес:<br><a id="go" href="https://om.opsengeneering.com/">om.opsengeneering.com</a></p>
+<script>document.getElementById('go').href = 'https://om.opsengeneering.com/' + location.search + location.hash;</script>
+</body>
+</html>
